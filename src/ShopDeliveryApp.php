@@ -12,7 +12,7 @@ use Hyperf\Utils\Collection;
  *
  * @property-read AppConfig\Client $app       应用配置
  * @property-read Common\Client $common       公共配置
- * @property-read DeliveryOrder\Client $order       配送订单
+ * @property-read DeliveryOrder\Client $delivery_order       配送订单
  * @property-read MeituanDelivery\MeituanDelivery $meituan_delivery       美团配送
  */
 class ShopDeliveryApp extends Container
