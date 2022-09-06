@@ -28,7 +28,7 @@ class Client extends BaseApi
      */
     public function show(array $query = [])
     {
-        return $this->httpGet('/api/delivery/show', $query);
+        return $this->httpGet('/api/delivery/order/show', $query);
     }
 
 }
