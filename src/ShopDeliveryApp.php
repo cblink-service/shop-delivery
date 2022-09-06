@@ -22,5 +22,6 @@ class ShopDeliveryApp extends Container
         AppConfig\ServiceProvider::class,
         Common\ServiceProvider::class,
         MeituanDelivery\MeituanServiceProvider::class,
+        DeliveryOrder\ServiceProvider::class,
     ];
 }
