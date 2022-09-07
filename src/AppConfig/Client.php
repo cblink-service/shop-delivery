@@ -6,6 +6,17 @@ use Cblink\Service\ShopDelivery\Kernel\BaseApi;
 
 class Client extends BaseApi
 {
+    /**
+     * 配送详情
+     *
+     * @param array $query
+     * @return array|\Psr\Http\Message\ResponseInterface|string
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function index(array $query = [])
+    {
+        return $this->httpGet('/api/config/index', $query);
+    }
 
     /**
      * 配送详情
