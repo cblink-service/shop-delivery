@@ -7,6 +7,30 @@ use Cblink\Service\ShopDelivery\Kernel\BaseApi;
 class Client extends BaseApi
 {
     /**
+     * 列表
+     *
+     * @param array $query
+     * @return array|\Psr\Http\Message\ResponseInterface|string
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function list(array $query = [])
+    {
+        return $this->httpGet('/api/shop', $query);
+    }
+
+    /**
+     * 详情
+     *
+     * @param array $query
+     * @return array|\Psr\Http\Message\ResponseInterface|string
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function show(array $query = [])
+    {
+        return $this->httpGet('/api/shop/show', $query);
+    }
+
+    /**
      * 门店状态
      *
      * @param array $query
